@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Proizvodi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Proizvodi"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Trgovina"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="24dp"
+        android:text="Trgovina"
+        android:textColor="@color/grey"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Proizvodi"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/UrediButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:padding="5dp"
+        android:text="Uredi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Trgovina">
+
+    </Button>
+
+    <Button
+        android:id="@+id/DodajButton"
+        android:layout_width="79dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="@color/orange"
+        android:text="Dodaj"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Proizvodi">
+
+    </Button>
+
+    <Button
+        android:id="@+id/IzbrisiButton"
+        android:layout_width="79dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/orange"
+        android:text="Izbriši"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/UrediButton"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toEndOf="@+id/DodajButton"
+        app:layout_constraintTop_toBottomOf="@+id/Trgovina">
+
+    </Button>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/circularRevealCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DodajButton">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProizvod"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="10dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <Button
+        android:id="@+id/Narudzba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circularRevealCardView"
+        android:text="Narudžba"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange">
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

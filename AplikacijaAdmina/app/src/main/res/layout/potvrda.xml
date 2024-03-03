@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="1dp"
+    android:elevation="200dp"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativniCV"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Naslov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/Opis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naslov"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Opis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/DAButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Naslov"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Želite li potvrditi narudžbu"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/DAButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DA"
+            android:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/NEButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="75dp"/>
+
+        <Button
+            android:id="@+id/NEButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NE"
+            android:backgroundTint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/DAButton"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="75dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

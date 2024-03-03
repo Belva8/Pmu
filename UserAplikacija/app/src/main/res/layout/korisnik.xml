@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    >
+
+    <EditText
+        android:id="@+id/ETKorisnik"
+        android:layout_width="398dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="300dp"
+        android:hint="Unesite e-mail adresu"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ETPass"
+        android:layout_width="393dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/ETKorisnik"
+        android:hint="Unesite lozinku"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Potvrdi"
+        app:layout_constraintTop_toBottomOf="@+id/ETKorisnik"
+
+        tools:layout_editor_absoluteX="9dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:id="@+id/Potvrdi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Potvrdi"
+    android:textSize="18sp"
+    android:layout_marginBottom="200dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ETPass" />
+
+    <TextView
+        android:id="@+id/TVRegistracija"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:text="Niste registrirani? Registriraj se!"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Potvrdi">
+</TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
