@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounduseradmin"
+    tools:context=".Registracija">
+
+    <EditText
+        android:id="@+id/etIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesi svoje ime: "
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesi svoj e-mail: "
+        android:textColorHint="@color/white"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/etIme" />
+
+    <EditText
+        android:id="@+id/etLozinka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesi svoju lozinku: "
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:password="true"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etPotvrdiLozinku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Potvrdi svoju lozinku"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:password="true"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/etLozinka" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Registriraj se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLozinka">
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

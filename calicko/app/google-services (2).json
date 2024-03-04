@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "886767733644",
+    "project_id": "racun-b1e0f",
+    "storage_bucket": "racun-b1e0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886767733644:android:65aae25c531e40459424a9",
+        "android_client_info": {
+          "package_name": "com.example.calicko"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFgjozouL9HXsNXshICQP809JYGzIPbbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886767733644:android:638dfff6c224f7009424a9",
+        "android_client_info": {
+          "package_name": "com.example.calicko2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFgjozouL9HXsNXshICQP809JYGzIPbbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

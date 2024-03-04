@@ -1,0 +1,118 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounduseradmin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBanka"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="Banka"
+        android:textColor="@color/red">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvĆalić"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Ćalić"
+        android:textColor="@color/purple"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvBanka"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/UrediButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/z"
+        android:padding="5dp"
+        android:text="Uredi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvĆalić">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/DodajButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/z"
+        android:text="Dodaj"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvBanka">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/IzbrisiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/z"
+        android:text="Izbriši"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/UrediButton"
+        app:layout_constraintStart_toEndOf="@+id/DodajButton"
+        app:layout_constraintTop_toBottomOf="@+id/tvĆalić">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/circularRevealCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DodajButton">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRacun"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="10dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circularRevealCardView"
+        android:text="Transakcija"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/z">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
